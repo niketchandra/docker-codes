@@ -1,0 +1,3 @@
+FROM centos:latest
+RUn useradd -ms /bin/bash cloud_user
+USER  cloud_user
