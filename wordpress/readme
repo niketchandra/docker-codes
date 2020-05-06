@@ -1,0 +1,29 @@
+docker volume create db_data
+basically there are 2 seperate containers
+
+1> wordpress
+2> mysql
+
+just run
+docker-compose config
+docker-compose up -d
+docker container ls
+docker container exec -it <wordpress container id> /bin/bash
+	$cat wp-config.php
+	$apt-get intall <package name>
+	exit
+$curl localhost:8000
+browser--> <public url>:8000
+
+
+docker container exec -it <mysql container id> /bin/bash
+	$mysql -u wordpress -p
+	<password>
+	show databases;
+	use wordpress;
+	any command you want to run just run
+	exit
+	exit
+
+your wordpress docker container with seperate mysql container is UP and RUNNING
+

@@ -1,0 +1,6 @@
+docker-compose config
+docker-compose up -d  ->> in detach format
+docker-compose down
+docker-compose ps
+docker container ls
+docker container exec -it <image id> /bin.bash
