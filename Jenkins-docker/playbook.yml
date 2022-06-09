@@ -1,5 +1,5 @@
 ---
-- hosts: azure
+- hosts: scripttest4niket.southeastasia.cloudapp.azure.com
   tasks:
     - name: deploy nginx docker container
       docker_container:
@@ -8,4 +8,4 @@
         state: started
         auto_remove: true
         ports:
-          - "8080:80"
+          - "8081:80"
