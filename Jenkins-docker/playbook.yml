@@ -1,5 +1,5 @@
 ---
-- hosts: scripttest4niket.southeastasia.cloudapp.azure.com
+- hosts: localhost
   tasks:
     - name: deploy nginx docker container
       docker_container:
