@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: azure
   tasks:
     - name: deploy nginx docker container
       docker_container:
