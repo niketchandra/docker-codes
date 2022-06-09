@@ -1,6 +1,5 @@
 ---
 - hosts: azure
-  connection: local
   tasks:
     - name: deploy nginx docker container
       docker_container:
